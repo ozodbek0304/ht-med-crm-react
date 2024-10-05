@@ -480,12 +480,12 @@ const AddCustomers = () => {
                         selected={
                           field.value ? new Date(field.value) : undefined
                         }
-                        onSelect={(date) => {
+                        onSelect={(date: any) => {
                           if (date) {
                             field.onChange(date)
                           }
                         }}
-                        disabled={(date) =>
+                        disabled={(date: any) =>
                           date < new Date() || date < new Date("1900-01-01")
                         }
                       // initialFocus
