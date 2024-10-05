@@ -1,7 +1,8 @@
-import { API_ENDPOINTS } from "@/api/api-endpoints";
-import baseQuery from "@/api/http";
-import { CalendarItem, CalendarListResult } from "@/interfaces/calendar-list";
+import baseQuery from '../../api/http';
+import { API_ENDPOINTS } from '../../api/api-endpoints';
+
 import { createApi } from "@reduxjs/toolkit/query/react";
+import { CalendarItem, CalendarListResult } from '../../interfaces/calendar-list';
 
 export const sellerCalendarListApi = createApi({
   reducerPath: "sellerCalendarListApi",

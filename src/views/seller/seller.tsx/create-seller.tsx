@@ -1,11 +1,11 @@
 import { Icon } from "@iconify/react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../components/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog";
+} from "../../../components/ui/dialog";
 import {
   Form,
   FormControl,
@@ -13,22 +13,22 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+} from "../../../components/ui/form";
+import { Input } from "../../../components/ui/input";
+import { Label } from "../../../components/ui/label";
 import Image from "next/image";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 import { Loader2, Upload } from "lucide-react";
 import { useEffect, useState } from "react";
-import { useCreateItemMutation } from "@/features/seller/seller";
+import { useCreateItemMutation } from "../../../features/seller/seller";
 import toast from "react-hot-toast";
-import { PhoneNumber } from "@/components/formatters/phone-number";
-import { Checkbox } from "@/components/ui/checkbox";
-import SelectSearchSeller from "@/components/form/search_create-seller";
-import { CreateItem } from "@/interfaces/seller-page";
+import { PhoneNumber } from "../../../components/formatters/phone-number";
+import { Checkbox } from "../../../components/ui/checkbox";
+import SelectSearchSeller from "../../../components/form/search_create-seller";
+import { CreateItem } from "../../../interfaces/seller-page";
 
 
 

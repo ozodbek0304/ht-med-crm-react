@@ -1,7 +1,7 @@
 "use client";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../components/ui/button";
 import { z } from "zod";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 import { useForm } from "react-hook-form";
 import { CalendarIcon, Plus } from "lucide-react";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -12,13 +12,13 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "../../../components/ui/select";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
-import { Calendar } from "@/components/ui/calendar";
+} from "../../../components/ui/popover";
+import { Calendar } from "../../../components/ui/calendar";
 import {
   Form,
   FormControl,
@@ -26,21 +26,21 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+} from "../../../components/ui/form";
+import { Input } from "../../../components/ui/input";
 import { useState, useEffect } from "react";
-import { FilterResult, useGetItemsQuery } from "@/features/settings/sectors-lists";
-import { useGetItemByIdQuery } from "@/features/settings/sectors-medical-lists";
-import { useGetItemsWithFiltersQuery } from "@/features/settings/location-lists";
-import { useGetItemsCustomerQuery } from "@/features/settings/sourse-lists";
-import { useGetItemsPaymentOrdersQuery } from "@/features/settings/payment-type-lists";
-import { useGetItemsPaymentQuery } from "@/features/settings/payment-methods-lists";
+import { FilterResult, useGetItemsQuery } from "../../../features/settings/sectors-lists";
+import { useGetItemByIdQuery } from "../../../features/settings/sectors-medical-lists";
+import { useGetItemsWithFiltersQuery } from "../../../features/settings/location-lists";
+import { useGetItemsCustomerQuery } from "../../../features/settings/sourse-lists";
+import { useGetItemsPaymentOrdersQuery } from "../../../features/settings/payment-type-lists";
+import { useGetItemsPaymentQuery } from "../../../features/settings/payment-methods-lists";
 import toast from "react-hot-toast";
-import { PhoneNumber } from "@/components/formatters/phone-number";
-import { useLazyGetItemsDetailsQuery, useUpdateItemMutation } from "@/features/customer/customer";
+import { PhoneNumber } from "../../../components/formatters/phone-number";
+import { useLazyGetItemsDetailsQuery, useUpdateItemMutation } from "../../../features/customer/customer";
 import AddNewOptionModal from "../add-customers/components/add-newOption";
 import { useParams } from "next/navigation";
-import SelectSearchSeller from "@/components/form/multiple-select";
+import SelectSearchSeller from "../../../components/form/multiple-select";
 
 
 

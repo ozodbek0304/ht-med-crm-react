@@ -1,24 +1,14 @@
 "use client";
 import React from "react";
-import { Badge } from "@/components/ui/badge";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardFooter,
-} from "@/components/ui/card";
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-  AvatarGroup,
-} from "@/components/ui/avatar";
-import DeleteConfirmationDialog from "@/components/modals/delete-confirmation-dialog";
 import { useTheme } from "next-themes";
-import { Location } from "@/components/svg";
-import { formatPhoneNumber } from "@/components/formatters/phone-formatter";
 import { formatCustomDate } from "../formatters/date-formatter";
 import { Link } from "react-router-dom";
+import DeleteConfirmationDialog from "../modals/delete-confirmation-dialog";
+import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
+import { Badge } from "../ui/badge";
+import { Avatar, AvatarFallback, AvatarGroup, AvatarImage } from "../ui/avatar";
+import { formatPhoneNumber } from "../formatters/phone-formatter";
+import { Location } from "../../svg";
 interface ProjectGridProps {
   project: any;
   role: string;

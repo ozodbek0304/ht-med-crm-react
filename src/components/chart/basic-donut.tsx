@@ -1,10 +1,10 @@
 "use client";
 
-import { useThemeStore } from "@/store";
+import { useThemeStore } from "../../store/index";
 import { useTheme } from "next-themes";
-import { themes } from "@/config/thems";
 import { addPeriodToThousands } from "../formatters/price-formatter";
 import Chart from "react-apexcharts";
+import { themes } from "../../config/thems";
 
 
 interface Item {

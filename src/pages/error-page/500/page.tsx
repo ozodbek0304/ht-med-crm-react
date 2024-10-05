@@ -1,10 +1,10 @@
 "use client"
 import Image from "next/image";
-import lightImage from "@/public/images/error/light-500.png"
-import darkImage from "@/public/images/error/dark-500.png"
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import lightImage from "../../../assets/light-500.png"
+import darkImage from "../../../assets/dark-500.png"
 import { useTheme } from "next-themes";
+import { Button } from "../../../components/ui/button";
+import { Link } from "react-router-dom";
 const ErrorPage = () => {
   const { theme } = useTheme();
   return (
@@ -24,7 +24,7 @@ const ErrorPage = () => {
             The page you are looking for might have been removed had <br /> its name changed or is temporarily unavailable.
           </div>
           <Button asChild className="mt-9  md:min-w-[300px]" size="lg">
-            <Link href="/dashboard">Go to Homepage</Link>
+            <Link to="/dashboard">Go to Homepage</Link>
           </Button>
         </div>
       </div>

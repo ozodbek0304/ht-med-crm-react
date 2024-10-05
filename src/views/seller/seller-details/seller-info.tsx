@@ -1,7 +1,7 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, Location, Calender, CalenderCheck } from "@/components/svg";
-import { formatPhoneNumber } from "@/components/formatters/phone-formatter";
-import { SellerDetailsItem } from "@/interfaces/seller-page";
+import { Card, CardContent, CardHeader, CardTitle } from "../../../components/ui/card";
+import { Phone, Location, Calender, CalenderCheck } from "../../../svg";
+import { formatPhoneNumber } from "../../../components/formatters/phone-formatter";
+import { SellerDetailsItem } from "../../../interfaces/seller-page";
 
 interface UserInfoItem {
     icon: React.ComponentType<{ className?: string }>;

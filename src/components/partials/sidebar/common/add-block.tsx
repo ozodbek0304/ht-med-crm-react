@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 
 import { X } from "lucide-react";
-// import thumbnail from "@/public/images/all-img/thumbnail.png";
-import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent } from "../../../ui/dialog";
+import { Button } from "../../../ui/button";
+
 
 const AddBlock = ({
   className,

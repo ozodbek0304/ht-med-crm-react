@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import ProfileHeader from "./profile-header";
-import { Label } from "@/components/ui/label";
-import { Progress } from "@/components/ui/progress";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Label } from "../../../components/ui/label";
+import { Progress } from "../../../components/ui/progress";
+import { Card, CardContent, CardHeader, CardTitle } from "../../../components/ui/card";
 import SellerInfo from "./seller-info";
 import { Loader2 } from "lucide-react";
-import LineColumn from "@/components/chart/line-chart";
-import BasicPie from "@/components/chart/basic-pie";
-import BasicDonut from "@/components/chart/basic-donut";
+import LineColumn from "../../../components/chart/line-chart";
 import DatePickerWithRange from "./date-picker-with-range";
 import { useParams } from "next/navigation";
-import { useGetDetailsQuery } from "@/features/seller/seller";
+import { useGetDetailsQuery } from "../../../features/seller/seller";
 import SellerCustomersPages from "../customers/customer-page";
 
 

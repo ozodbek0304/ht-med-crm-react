@@ -1,9 +1,9 @@
 
 
-import { NavigationMenu } from "@/components/ui/navigation-menu";
-import { useAuth } from "@/store";
+import { NavigationMenu } from "../../ui/navigation-menu";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../../store";
 
 
 export default function MainMenu() {

@@ -1,13 +1,13 @@
 import { FC, MouseEventHandler } from "react";
-import { Button } from "@/components/ui/button";
-import { Expand } from "@/components/svg";
+import { Button } from "../../ui/button";
 import {
   Tooltip,
   TooltipArrow,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from "../../ui/tooltip";
+import { Expand } from "../../../svg";
 
 type CustomDocument = Document & {
   mozCancelFullScreen?: () => void;

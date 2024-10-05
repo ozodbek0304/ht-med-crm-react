@@ -1,15 +1,15 @@
 import CustomerFilters from "./custom-filters";
 import CustomerHeading from "./customer-heading";
-import {useGetItemsQuery } from "@/features/customer/customer";
-import { useAuth } from "@/store";
-import SkeletonPage from "@/components/skeleton/skeleton-page";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import PaginationPage from "@/components/pagination/page";
+import {useGetItemsQuery } from "../../../features/customer/customer";
+import { useAuth } from "../../../store";
+import SkeletonPage from "../../../components/skeleton/skeleton-page";
+import { Alert, AlertDescription } from "../../../components/ui/alert";
+import PaginationPage from "../../../components/pagination/page";
 import { useState } from "react";
-import { useCustomerStore } from "@/store/customerStore";
-import { Card, CardContent } from "@/components/ui/card";
-import ProjectGrid from "@/components/customer-card/project-grid";
-import { Result } from "@/interfaces/customer";
+import { useCustomerStore } from "../../../store/customerStore";
+import { Card, CardContent } from "../../../components/ui/card";
+import ProjectGrid from "../../../components/customer-card/project-grid";
+import { Result } from "../../../interfaces/customer";
 
 const CustomerPage = ({ card = "block" }: { card?: string }) => {
   const { queryParam, setQueryParam } = useCustomerStore();

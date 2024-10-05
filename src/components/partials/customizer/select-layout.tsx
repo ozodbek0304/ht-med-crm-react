@@ -1,12 +1,12 @@
 import React from "react";
-import { Label } from "@/components/ui/label";
-import { cn } from "@/lib/utils";
-import { themes } from "@/config/thems";
-import { useThemeStore } from "@/store";
 import { useTheme } from "next-themes";
-import { VerticalSvg, HorizontalSvg } from "@/components/svg";
 
 import { Icon } from "@iconify/react";
+import { useThemeStore } from "../../../store";
+import { themes } from "../../../config/thems";
+import { cn } from "../../../lib/utils";
+import { Label } from "../../ui/label";
+import { HorizontalSvg, VerticalSvg } from "../../../svg";
 const layoutOptions = [
   {
     key: "vertical",

@@ -6,16 +6,16 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin, { Draggable } from "@fullcalendar/interaction";
 import listPlugin from "@fullcalendar/list";
 import ExternalDraggingevent from "./dragging-events";
-import { Calendar } from "@/components/ui/calendar";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "../../components/ui/card";
 import { uz } from "date-fns/locale";
 import { EventContentArg } from "@fullcalendar/core";
 import { DateRange } from "react-day-picker";
-import { useCalendarIsAvailableStore } from "@/store/calendarIsAvailableStore";
+import { useCalendarIsAvailableStore } from "../../store/calendarIsAvailableStore";
 import dayjs from "dayjs";
 
-import { Skeleton } from "@/components/ui/skeleton";
-import { CalendarIsAvailableItem } from "@/interfaces/calendar-list";
+import { Skeleton } from "../../components/ui/skeleton";
+import { CalendarIsAvailableItem } from "../../interfaces/calendar-list";
+import { Calendar } from "../../components/ui/calendar";
 const wait = () => new Promise((resolve) => setTimeout(resolve, 1000));
 interface CalendarViewProps {
   events: CalendarIsAvailableItem[] | undefined;

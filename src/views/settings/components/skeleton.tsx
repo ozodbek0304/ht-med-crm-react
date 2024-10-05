@@ -1,10 +1,10 @@
-import { Skeleton } from "@/components/ui/skeleton";
+import { Skeleton } from "../../../components/ui/skeleton";
 
 
 import {
     Card,
     CardContent,
-} from "@/components/ui/card";
+} from "../../../components/ui/card";
 
 const SettingsSkeleton = () => {
     return (

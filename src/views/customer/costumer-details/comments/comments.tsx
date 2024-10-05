@@ -1,11 +1,11 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "../../../../components/ui/card";
 import CommentSection from "./comment/Comment";
 import CommentFooter from "./commentFooter";
-import { Messages } from "@/components/svg";
-import { useGetCommentsQuery } from "@/features/comments/comment";
-import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Messages } from "../../../../svg";
+import { useGetCommentsQuery } from "../../../../features/comments/comment";
+import { Alert, AlertDescription } from "../../../../components/ui/alert";
 import { useState } from "react";
-import { Skeleton } from "@/components/ui/skeleton";
+import { Skeleton } from "../../../../components/ui/skeleton";
 
 const CommentsSection = () => {
 

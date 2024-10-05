@@ -1,8 +1,6 @@
-import React from 'react'
 import { Icon } from "@iconify/react";
-import { InputGroup, InputGroupText } from "@/components/ui/input-group";
-import { Input } from '@/components/ui/input';
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { InputGroup, InputGroupText } from "../ui/input-group";
+import { Input } from '../ui/input';
 
 type Props = {
     setSearch: any;

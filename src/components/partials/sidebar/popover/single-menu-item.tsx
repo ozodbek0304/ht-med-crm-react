@@ -1,8 +1,8 @@
 import { Icon } from "@iconify/react";
-import { cn, isLocationMatch, getDynamicPath } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import { Link } from "react-router-dom";
 import * as Tooltip from "@radix-ui/react-tooltip";
+import { cn, getDynamicPath, isLocationMatch } from "../../../../lib/utils";
 
 const SingleMenuItem = ({ item, collapsed }: {
   item: any;

@@ -1,7 +1,7 @@
 // src/services/api.ts
-import { API_ENDPOINTS } from '@/api/api-endpoints';
-import baseQuery from '@/api/http';
-import { NotificationItem, NotificationsResult } from '@/interfaces/notification';
+import baseQuery from '../../api/http';
+import { API_ENDPOINTS } from '../../api/api-endpoints';
+import { NotificationItem, NotificationsResult } from '../../interfaces/notification';
 import { createApi } from '@reduxjs/toolkit/query/react';
 
 

@@ -1,8 +1,8 @@
 // src/services/api.ts
-import { API_ENDPOINTS } from "@/api/api-endpoints";
-import baseQuery from "@/api/http";
+import baseQuery from '../../api/http';
+import { API_ENDPOINTS } from '../../api/api-endpoints';
 import { createApi } from "@reduxjs/toolkit/query/react";
-import { SellerRequestsResult, UpdateItem } from "@/interfaces/seller-page";
+import { SellerRequestsResult, UpdateItem } from "../../interfaces/seller-page";
 
 
 export const sellerRequestListsApi = createApi({

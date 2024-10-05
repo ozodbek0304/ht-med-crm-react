@@ -1,15 +1,15 @@
 import CustomerFilters from "./custom-filters";
-import { useAuth } from "@/store";
-import SkeletonPage from "@/components/skeleton/skeleton-page";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import PaginationPage from "@/components/pagination/page";
+import { useAuth } from "../../../store";
+import SkeletonPage from "../../../components/skeleton/skeleton-page";
+import { Alert, AlertDescription } from "../../../components/ui/alert";
+import PaginationPage from "../../../components/pagination/page";
 import { useState } from "react";
-import { useCustomerStore } from "@/store/customerStore";
+import { useCustomerStore } from "../../../store/customerStore";
 import { useParams } from "next/navigation";
-import { useGetItemsDetailsSellerQuery } from "@/features/seller-dashboard/seller-dashboard";
-import { Card, CardContent } from "@/components/ui/card";
-import ProjectGrid from "@/components/customer-card/project-grid";
-import { Result } from "@/interfaces/customer";
+import { useGetItemsDetailsSellerQuery } from "../../../features/seller-dashboard/seller-dashboard";
+import { Card, CardContent } from "../../../components/ui/card";
+import ProjectGrid from "../../../components/customer-card/project-grid";
+import { Result } from "../../../interfaces/customer";
 
 
 

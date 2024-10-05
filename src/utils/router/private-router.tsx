@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { urls } from "./urls";
-import { useAuth } from "@/store";
+import { useAuth } from "../../store";
+
 
 interface AppProps {
     children: React.ReactNode

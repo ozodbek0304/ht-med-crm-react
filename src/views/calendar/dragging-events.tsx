@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 const ExternalDraggingevent = ({ event }: any) => {
   const { title, id, tag } = event;
 

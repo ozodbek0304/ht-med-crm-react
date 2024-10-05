@@ -6,9 +6,9 @@ import {
     TableHead,
     TableHeader,
     TableRow,
-} from "@/components/ui/table";
+} from "../../../components/ui/table";
 import { Icon } from "@iconify/react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../components/ui/button";
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -16,18 +16,18 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+} from "../../../components/ui/dropdown-menu";
+import { Card } from "../../../components/ui/card";
+import { Badge } from "../../../components/ui/badge";
 import { useState } from "react";
 import UpdateModalSettings from "./update-customer-modal";
 import DeleteSettingDialog from "./delete-settings";
 import SettingsSkeleton from "./skeleton";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import { useDeleteSectorMedicalItemMutation, useGetItemByIdQuery } from "@/features/settings/sectors-medical-lists";
-import { FilterResult } from "@/features/settings/sectors-lists";
+import { Alert, AlertDescription } from "../../../components/ui/alert";
+import { useDeleteSectorMedicalItemMutation, useGetItemByIdQuery } from "../../../features/settings/sectors-medical-lists";
+import { FilterResult } from "../../../features/settings/sectors-lists";
 
-import PaginationPage from "@/components/pagination/page";
+import PaginationPage from "../../../components/pagination/page";
 
 
 export interface DataRows {

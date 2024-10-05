@@ -1,17 +1,17 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Button } from "../../components/ui/button";
+import { Card, CardContent, CardHeader } from "../../components/ui/card";
 import { useEffect, useState } from "react";
-import { Input } from "@/components/ui/input";
+import { Input } from "../../components/ui/input";
 
-import { Skeleton } from "@/components/ui/skeleton";
+import { Skeleton } from "../../components/ui/skeleton";
 import toast from "react-hot-toast";
 import { Icon } from "@iconify/react";
-import DeleteConfirmationDialog from "@/components/modals/delete-confirmation-dialog";
-import { useGetSellerRequestsQuery, useUpdateSellerRequestMutation } from "@/features/selller-request/seller-request";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import { formatCustomDate } from "@/components/formatters/date-formatter";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import PaginationPage from "@/components/pagination/page";
+import DeleteConfirmationDialog from "../../components/modals/delete-confirmation-dialog";
+import { useGetSellerRequestsQuery, useUpdateSellerRequestMutation } from "../../features/selller-request/seller-request";
+import { Alert, AlertDescription } from "../../components/ui/alert";
+import { formatCustomDate } from "../../components/formatters/date-formatter";
+import { Avatar, AvatarFallback, AvatarImage } from "../../components/ui/avatar";
+import PaginationPage from "../../components/pagination/page";
 
 interface roleData {
   role: string;

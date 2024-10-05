@@ -1,13 +1,13 @@
 import { Icon } from "@iconify/react";
-import { InputGroup, InputGroupText } from "@/components/ui/input-group";
-import { Input } from "@/components/ui/input";
+import { InputGroup, InputGroupText } from "../../../components/ui/input-group";
+import { Input } from "../../../components/ui/input";
 import { UserPlus } from "lucide-react";
 import { useEffect, useState } from "react";
 import CreateSellerModal from "./create-seller";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import useDebounce from "@/hooks/use-Debunce";
-import { useSellerStore } from "@/store/sellersStore";
+import { Button } from "../../../components/ui/button";
+import { Card } from "../../../components/ui/card";
+import useDebounce from "../../../hooks/use-Debunce";
+import { useSellerStore } from "../../../store/sellersStore";
 
 const SellerHeading = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

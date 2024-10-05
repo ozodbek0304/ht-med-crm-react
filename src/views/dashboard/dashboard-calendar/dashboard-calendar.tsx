@@ -1,15 +1,15 @@
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import { Card, CardContent } from "@/components/ui/card";
-import { Skeleton } from "@/components/ui/skeleton";
-import { useGetSellerCalendarDateQuery } from "@/features/seller-dashboard/seller-dashboard";
-import { useCalendarStore } from "@/store/calendarStore";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Alert, AlertDescription } from "../../../components/ui/alert";
+import { Card, CardContent } from "../../../components/ui/card";
+import { Skeleton } from "../../../components/ui/skeleton";
+import { useGetSellerCalendarDateQuery } from "../../../features/seller-dashboard/seller-dashboard";
+import { useCalendarStore } from "../../../store/calendarStore";
+import { Avatar, AvatarFallback, AvatarImage } from "../../../components/ui/avatar";
 import dayjs from "dayjs";
 import { useState } from "react";
 import { DateRange } from "react-day-picker";
-import { formatCustomDate } from "@/components/formatters/date-formatter";
-import { Calendar } from "@/components/ui/calendar";
-import { SellerDashboardItem } from "@/interfaces/seller-dashboard";
+import { formatCustomDate } from "../../../components/formatters/date-formatter";
+import { Calendar } from "../../../components/ui/calendar";
+import { SellerDashboardItem } from "../../../interfaces/seller-dashboard";
 
 const DashBoardCalendar = () => {
   const [selectedRange, setSelectedRange] = useState<DateRange | undefined>(

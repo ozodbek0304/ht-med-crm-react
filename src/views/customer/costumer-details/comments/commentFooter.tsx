@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../../components/ui/button";
 import { Annoyed, Loader2, SendHorizontal } from "lucide-react";
 import data from "@emoji-mart/data";
 import Picker from "@emoji-mart/react";
@@ -10,10 +10,10 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
+} from "../../../../components/ui/popover";
 import { useParams } from "next/navigation";
 import toast from "react-hot-toast";
-import { useCreateItemMutation, useUpdateItemMutation } from "@/features/comments/comment";
+import { useCreateItemMutation, useUpdateItemMutation } from "../../../../features/comments/comment";
 
 interface Props {
   propValue: any;

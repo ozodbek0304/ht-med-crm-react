@@ -1,8 +1,8 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, Map, ClipBoard2, ClipBoard, Calendar, Mail, Medical } from "@/components/svg";
-import { formatPhoneNumber } from "@/components/formatters/phone-formatter";
-import { formatCustomDate } from "@/components/formatters/date-formatter";
-import { ResultDetails } from "@/interfaces/customer";
+import { Card, CardContent, CardHeader, CardTitle } from "../../../components/ui/card";
+import { Phone, Map, ClipBoard2, ClipBoard, Calendar, Mail, Medical } from "../../../svg";
+import { formatPhoneNumber } from "../../../components/formatters/phone-formatter";
+import { formatCustomDate } from "../../../components/formatters/date-formatter";
+import { ResultDetails } from "../../../interfaces/customer";
 
 
 interface UserInfoItem {

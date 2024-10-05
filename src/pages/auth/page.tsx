@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import background from "@/assets/mountain.png";
+import background from "../../assets/mountain.png";
 import LogInForm from "./login-form";
 
 const LoginPage = () => {

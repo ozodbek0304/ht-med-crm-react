@@ -1,8 +1,8 @@
 // src/services/api.ts
-import { API_ENDPOINTS } from "@/api/api-endpoints";
-import baseQuery from "@/api/http";
-import { CreateItemComment, ItemComment } from "@/interfaces/commit-page";
+import baseQuery from '../../api/http';
+import { API_ENDPOINTS } from '../../api/api-endpoints';
 import { createApi } from "@reduxjs/toolkit/query/react";
+import { CreateItemComment, ItemComment } from '../../interfaces/commit-page';
 
 export const commentsListApi = createApi({
   reducerPath: "commentsListApi",

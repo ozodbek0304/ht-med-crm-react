@@ -1,9 +1,9 @@
 "use client";
 
-import { useThemeStore } from "@/store";
+import { useThemeStore } from "../../store/index";
 import { useTheme } from "next-themes";
-import { themes } from "@/config/thems";
 import Chart from "react-apexcharts";
+import { themes } from "../../config/thems";
 
 const BasicPie = ({ height = 350 }) => {
   const { theme: config } = useThemeStore();
@@ -12,7 +12,7 @@ const BasicPie = ({ height = 350 }) => {
 
   const series = [44, 55, 13, 43];
 
-  const options:any = {
+  const options: any = {
     chart: {
       toolbar: {
         show: false,
@@ -47,8 +47,8 @@ const BasicPie = ({ height = 350 }) => {
     legend: {
       labels: {
         colors: `hsl(${theme?.cssVars[
-            mode === "dark" || mode === "system" ? "dark" : "light"
-          ].chartLabel
+          mode === "dark" || mode === "system" ? "dark" : "light"
+        ].chartLabel
           })`,
       },
       itemMargin: {
@@ -59,18 +59,18 @@ const BasicPie = ({ height = 350 }) => {
         width: 10,
         height: 10,
         radius: 10,
-        offsetX:-5
+        offsetX: -5
       }
     },
   };
   return (
-      <Chart
-        options={options}
-        series={series}
-        type="pie"
-        height={height}
-        width={"100%"}
-      />
+    <Chart
+      options={options}
+      series={series}
+      type="pie"
+      height={height}
+      width={"100%"}
+    />
   );
 };
 

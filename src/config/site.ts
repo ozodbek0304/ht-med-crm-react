@@ -1,6 +1,6 @@
 
 
-import { SellerResults } from "@/interfaces/seller-page";
+import { SellerResults } from "../interfaces/seller-page";
 import { menusConfigAdmin } from "./menus";
 
 interface UserData {

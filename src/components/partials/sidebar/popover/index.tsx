@@ -1,17 +1,17 @@
 "use client";
 import React from "react";
 
-import { cn, isLocationMatch, getDynamicPath } from "@/lib/utils";
 import SidebarLogo from "../common/logo";
 import SingleMenuItem from "./single-menu-item";
-import { useAuth, useSidebar, useThemeStore } from "@/store";
-import { Separator } from "@/components/ui/separator";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import AddBlock from "../common/add-block";
 import { Icon } from "@iconify/react";
 import * as Tooltip from "@radix-ui/react-tooltip";
 import { usePathname } from "next/navigation";
-import { initialUser } from "@/config/site";
+import { useAuth, useSidebar, useThemeStore } from "../../../../store";
+import { initialUser } from "../../../../config/site";
+import { cn, getDynamicPath, isLocationMatch } from "../../../../lib/utils";
+import { Separator } from "../../../ui/separator";
+import { ScrollArea } from "../../../ui/scroll-area";
 
 
 const PopoverSidebar = () => {
@@ -25,7 +25,6 @@ const PopoverSidebar = () => {
     window.location.assign("/auth");
     localStorage.clear();
   }
-
 
   const pathname = usePathname();
   const locationName = getDynamicPath(pathname);

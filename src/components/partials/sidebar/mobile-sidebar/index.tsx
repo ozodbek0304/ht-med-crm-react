@@ -1,10 +1,10 @@
 "use client";
-import { cn } from "@/lib/utils";
-import { useAuth, useSidebar } from "@/store";
-import SidebarLogo from "../common/logo";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import SingleMenuItem from "./single-menu-item";
 
+import { cn } from "../../../../lib/utils";
+import { useAuth, useSidebar } from "../../../../store";
+import { ScrollArea } from "../../../ui/scroll-area";
+import SidebarLogo from "../common/logo";
+import SingleMenuItem from "./single-menu-item";
 const MobileSidebar = ({ className }: { className?: string }) => {
   const { mobileMenu, setMobileMenu } = useSidebar();
   const { collapsed } = useSidebar();

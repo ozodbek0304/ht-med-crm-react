@@ -5,16 +5,16 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "../../../../../components/ui/dropdown-menu";
 import { useEffect, useState } from "react";
-import DeleteConfirmationDialog from "@/components/modals/delete-confirmation-dialog";
-import { formatCustomDate } from "@/components/formatters/date-formatter";
+import DeleteConfirmationDialog from "../../../../../components/modals/delete-confirmation-dialog";
+import { formatCustomDate } from "../../../../../components/formatters/date-formatter";
 import toast from "react-hot-toast";
 import parse from 'html-react-parser';
-import { Input } from "@/components/ui/input";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { CommentType } from "@/interfaces/commit-page";
-import { useDeleteItemMutation, useUpdateItemMutation } from "@/features/comments/comment";
+import { Avatar, AvatarFallback, AvatarImage } from "../../../../../components/ui/avatar";
+import { CommentType } from "../../../../../interfaces/commit-page";
+import { useDeleteItemMutation, useUpdateItemMutation } from "../../../../../features/comments/comment";
+import { Input } from "../../../../../components/ui/input";
 
 
 

@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { Icon } from "@iconify/react";
-import { InputGroup, InputGroupText } from "@/components/ui/input-group";
-import { Input } from '@/components/ui/input';
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import useDebounce from '@/hooks/use-Debunce';
+import { InputGroup, InputGroupText } from "../ui/input-group";
+import { Input } from '../ui/input';
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Alert, AlertDescription } from '../ui/alert';
-import { useGetItemsCustomerProductsQuery } from '@/features/settings/products-lists';
-import { useSellerStore } from '@/store/products';
+import { useSellerStore } from '../../store/products';
+import useDebounce from '../../hooks/use-Debunce';
+import { useGetItemsCustomerProductsQuery } from '../../features/settings/products-lists';
 
 
 type Props = {

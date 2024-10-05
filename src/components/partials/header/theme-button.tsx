@@ -1,15 +1,15 @@
 "use client";
 import { useTheme } from "next-themes";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import {  Moon, Sun } from "@/components/svg";
+} from "../../ui/dropdown-menu";
 import { Check } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { Moon, Sun } from "../../../svg";
+import { cn } from "../../../lib/utils";
 
 const ThemeButton = () => {
   const { theme, setTheme } = useTheme();

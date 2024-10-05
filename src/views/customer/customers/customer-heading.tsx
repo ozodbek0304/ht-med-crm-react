@@ -1,7 +1,7 @@
-import { addPeriodToThousands } from "@/components/formatters/price-formatter";
-import { CheckShape, Spam, User } from "@/components/svg";
-import { useGetItemCustomerCountQuery } from "@/features/customer/customer";
-import { cn } from "@/lib/utils";
+import { addPeriodToThousands } from "../../../components/formatters/price-formatter";
+import { CheckShape, Spam, User } from "../../../svg";
+import { useGetItemCustomerCountQuery } from "../../../features/customer/customer";
+import { cn } from "../../../lib/utils";
 import { Icon } from "@iconify/react";
 import { Trash } from "lucide-react";
 const CustomerHeading = () => {

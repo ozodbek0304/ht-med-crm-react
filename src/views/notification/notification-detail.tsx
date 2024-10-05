@@ -1,13 +1,13 @@
-import { cn } from "@/lib/utils";
-import shortImage from "@/assets/short-image-2.png";
-import { Card, CardContent } from "@/components/ui/card";
-import { useGetNotificationItemsQuery } from "@/features/notifications/notifications";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import SkeletonPage from "@/components/skeleton/skeleton-page";
-import PaginationPage from "@/components/pagination/page";
+import { cn } from "../../lib/utils";
+import shortImage from "../../assets/short-image-2.png";
+import { Card, CardContent } from "../../components/ui/card";
+import { useGetNotificationItemsQuery } from "../../features/notifications/notifications";
+import { Alert, AlertDescription } from "../../components/ui/alert";
+import SkeletonPage from "../../components/skeleton/skeleton-page";
+import PaginationPage from "../../components/pagination/page";
 import { useState } from "react";
-import { useNotificationStore } from "@/store/notificationStore";
-import { formatCustomDate } from "@/components/formatters/date-formatter";
+import { useNotificationStore } from "../../store/notificationStore";
+import { formatCustomDate } from "../../components/formatters/date-formatter";
 
 const NotificationMessageDetail = () => {
   const { queryParam, setQueryParam } = useNotificationStore();

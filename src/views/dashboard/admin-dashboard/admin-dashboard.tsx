@@ -1,21 +1,21 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "../../../components/ui/card";
 import DashboardCard from "../dashboard-card";
-import LineColumn from "@/components/chart/line-chart";
-import { useGetItemsQuery } from "@/features/seller/seller";
-import { Alert, AlertDescription } from "@/components/ui/alert";
+import LineColumn from "../../../components/chart/line-chart";
+import { useGetItemsQuery } from "../../../features/seller/seller";
+import { Alert, AlertDescription } from "../../../components/ui/alert";
 import SettingsSkeleton from "../../settings/components/skeleton";
-import { useGetItemsSellerDashboardQuery } from "@/features/admin-dashboard/admin-dashboard";
-import { Skeleton } from "@/components/ui/skeleton";
-import { addPeriodToThousands } from "@/components/formatters/price-formatter";
+import { useGetItemsSellerDashboardQuery } from "../../../features/admin-dashboard/admin-dashboard";
+import { Skeleton } from "../../../components/ui/skeleton";
+import { addPeriodToThousands } from "../../../components/formatters/price-formatter";
 import TopSellerComments from "./commints";
 import TopSeller from "./top-seller";
 import DashboardCommitDate from "../dashboard-date-card";
-import { CommentType } from "@/interfaces/commit-page";
-import { SellerResults } from "@/interfaces/seller-page";
-import { useGetCommentsQuery } from "@/features/comments/comment";
-import { Application, Spam, User } from "@/svg";
+import { CommentType } from "../../../interfaces/commit-page";
+import { SellerResults } from "../../../interfaces/seller-page";
+import { useGetCommentsQuery } from "../../../features/comments/comment";
+import { Application, Spam, User } from "../../../svg";
 const AdminDashboard = () => {
 
 

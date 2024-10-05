@@ -5,21 +5,21 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "../../../components/ui/select";
 
-import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Label } from "@/components/ui/label";
-import { useCustomerStore } from "@/store/customerStore";
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "../../../components/ui/dialog";
+import { Label } from "../../../components/ui/label";
+import { useCustomerStore } from "../../../store/customerStore";
 import { useEffect, useState } from "react";
-import useDebounce from "@/hooks/use-Debunce";
-import { InputGroup, InputGroupText } from "@/components/ui/input-group";
-import { Button } from "@/components/ui/button";
-import { useGetItemsWithFiltersQuery } from "@/features/settings/location-lists";
-import { useGetItemsCustomerQuery } from "@/features/settings/sourse-lists";
-import { useGetItemsCustomerProductsQuery } from "@/features/settings/products-lists";
-import { useGetItemsPaymentOrdersQuery } from "@/features/settings/payment-type-lists";
-import { FilterResult } from "@/features/settings/sectors-lists";
-import { Input } from "@/components/ui/input";
+import useDebounce from "../../../hooks/use-Debunce";
+import { InputGroup, InputGroupText } from "../../../components/ui/input-group";
+import { Button } from "../../../components/ui/button";
+import { useGetItemsWithFiltersQuery } from "../../../features/settings/location-lists";
+import { useGetItemsCustomerQuery } from "../../../features/settings/sourse-lists";
+import { useGetItemsCustomerProductsQuery } from "../../../features/settings/products-lists";
+import { useGetItemsPaymentOrdersQuery } from "../../../features/settings/payment-type-lists";
+import { FilterResult } from "../../../features/settings/sectors-lists";
+import { Input } from "../../../components/ui/input";
 
 
 const selectData = [{

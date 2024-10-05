@@ -1,6 +1,5 @@
-import { Bell } from "@/components/svg";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from "../../ui/badge";
+import { Button } from "../../ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -8,15 +7,16 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { cn } from "@/lib/utils";
-import shortImage from "@/assets/short-image-2.png";
-import { Alert, AlertDescription } from "@/components/ui/alert";
+} from "../../ui/dropdown-menu";
+import { ScrollArea } from "../../ui/scroll-area";
+import shortImage from "../../../assets/short-image-2.png";
+import { Alert, AlertDescription } from "../../ui/alert";
 
-import { useGetNotificationItemsQuery } from "@/features/notifications/notifications";
-import { formatCustomDate } from "@/components/formatters/date-formatter";
+import { formatCustomDate } from "../../formatters/date-formatter";
 import { Link } from "react-router-dom";
+import { useGetNotificationItemsQuery } from "../../../features/notifications/notifications";
+import { Bell } from "../../../svg";
+import { cn } from "../../../lib/utils";
 
 const NotificationLists = () => {
   const { data, isSuccess } = useGetNotificationItemsQuery('')
@@ -52,7 +52,7 @@ const NotificationLists = () => {
         </DropdownMenuLabel>
         <div className="xl:max-h-[350px]">
           <ScrollArea className="h-full">
-            {isSuccess && data?.count > 0 ? data?.results.map((item, index) => (
+            {isSuccess && data?.count > 0 ? data?.results.map((item: any, index: number) => (
               <DropdownMenuItem
                 key={`inbox-${index}`}
                 className="flex m-2 items-end gap-9 py-2 px-4 cursor-pointer dark:hover:bg-background"

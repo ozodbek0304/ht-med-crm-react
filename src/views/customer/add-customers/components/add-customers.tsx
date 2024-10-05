@@ -1,8 +1,8 @@
 "use client";
-import Card from "@/components/ui/card-snippet";
-import { Button } from "@/components/ui/button";
-import {z } from "zod";
-import { cn } from "@/lib/utils";
+import Card from "../../../../components/ui/card-snippet";
+import { Button } from "../../../../components/ui/button";
+import { z } from "zod";
+import { cn } from "../../../../lib/utils";
 import { useForm } from "react-hook-form";
 import { CalendarIcon, Plus } from "lucide-react";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -13,13 +13,13 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "../../../../components/ui/select";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
-import { Calendar } from "@/components/ui/calendar";
+} from "../../../../components/ui/popover";
+import { Calendar } from "../../../../components/ui/calendar";
 import {
   Form,
   FormControl,
@@ -27,21 +27,21 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+} from "../../../../components/ui/form";
+import { Input } from "../../../../components/ui/input";
 import { useState } from "react";
 import AddNewOptionModal from "./add-newOption";
-import { Textarea } from "@/components/ui/textarea";
+import { Textarea } from "../../../../components/ui/textarea";
 import toast from "react-hot-toast";
-import { PhoneNumber } from "@/components/formatters/phone-number";
-import { useCreateItemMutation } from "@/features/customer/customer";
-import { FilterResult, useGetItemsQuery } from "@/features/settings/sectors-lists";
-import { useGetItemByIdQuery } from "@/features/settings/sectors-medical-lists";
-import { useGetItemsWithFiltersQuery } from "@/features/settings/location-lists";
-import { useGetItemsCustomerQuery } from "@/features/settings/sourse-lists";
-import { useGetItemsPaymentOrdersQuery } from "@/features/settings/payment-type-lists";
-import { useGetItemsPaymentQuery } from "@/features/settings/payment-methods-lists";
-import SelectSearchSeller from "@/components/form/multiple-select";
+import { PhoneNumber } from "../../../../components/formatters/phone-number";
+import { useCreateItemMutation } from "../../../../features/customer/customer";
+import { FilterResult, useGetItemsQuery } from "../../../../features/settings/sectors-lists";
+import { useGetItemByIdQuery } from "../../../../features/settings/sectors-medical-lists";
+import { useGetItemsWithFiltersQuery } from "../../../../features/settings/location-lists";
+import { useGetItemsCustomerQuery } from "../../../../features/settings/sourse-lists";
+import { useGetItemsPaymentOrdersQuery } from "../../../../features/settings/payment-type-lists";
+import { useGetItemsPaymentQuery } from "../../../../features/settings/payment-methods-lists";
+import SelectSearchSeller from "../../../../components/form/multiple-select";
 
 
 export interface PaymentType {
@@ -488,7 +488,7 @@ const AddCustomers = () => {
                         disabled={(date) =>
                           date < new Date() || date < new Date("1900-01-01")
                         }
-                        // initialFocus
+                      // initialFocus
                       />
                     </PopoverContent>
                   </Popover>

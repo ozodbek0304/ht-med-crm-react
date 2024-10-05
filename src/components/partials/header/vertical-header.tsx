@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { useSidebar, useThemeStore } from "@/store";
-import { cn } from "@/lib/utils";
-import { useMediaQuery } from "@/hooks/use-media-query";
 import SelectSearch from "../../form/search";
-import Image from "next/image";
 import { Link } from "react-router-dom";
+import { cn } from "../../../lib/utils";
+import { useSidebar, useThemeStore } from "../../../store";
+import { useMediaQuery } from "../../../hooks/use-media-query";
 
 
 const MenuBar = ({ collapsed, setCollapsed }: { collapsed: boolean, setCollapsed: (value: boolean) => void; }) => {

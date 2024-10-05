@@ -1,15 +1,15 @@
 "use client";
 import ThemeButton from "./theme-button";
-import { useSidebar, useThemeStore } from "@/store";
 import ProfileInfo from "./profile-info";
 import VerticalHeader from "./vertical-header";
 import HorizontalHeader from "./horizontal-header";
 import HorizontalMenu from "./horizontal-menu";
 import NotificationMessage from "./notification-message";
-import { useMediaQuery } from "@/hooks/use-media-query";
 import MobileMenuHandler from "./mobile-menu-handler";
 import FullScreen from "./full-screen";
-import { cn } from "@/lib/utils";
+import { useSidebar, useThemeStore } from "../../../store";
+import { useMediaQuery } from "../../../hooks/use-media-query";
+import { cn } from "../../../lib/utils";
 
 
 const NavTools = ({ isDesktop }: { isDesktop: boolean; }) => {

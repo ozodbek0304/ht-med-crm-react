@@ -1,11 +1,11 @@
 import { Icon } from "@iconify/react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../components/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog";
+} from "../../../components/ui/dialog";
 import {
   Form,
   FormControl,
@@ -13,27 +13,27 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+} from "../../../components/ui/form";
+import { Input } from "../../../components/ui/input";
+import { Label } from "../../../components/ui/label";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 import { Loader2, Upload } from "lucide-react";
 import {
 
-} from "@/components/ui/select";
+} from "../../../components/ui/select";
 import { useEffect, useState } from "react";
 import {
   useUpdateItemMutation,
-} from "@/features/seller/seller";
+} from "../../../features/seller/seller";
 import toast from "react-hot-toast";
-import { PhoneNumber } from "@/components/formatters/phone-number";
+import { PhoneNumber } from "../../../components/formatters/phone-number";
 import { useParams } from "next/navigation";
-import { Checkbox } from "@/components/ui/checkbox";
+import { Checkbox } from "../../../components/ui/checkbox";
 import Image from "next/image";
-import { SellerDetailsItem, UpdateItem } from "@/interfaces/seller-page";
+import { SellerDetailsItem, UpdateItem } from "../../../interfaces/seller-page";
 
 
 interface UpdateSellerModalProps {

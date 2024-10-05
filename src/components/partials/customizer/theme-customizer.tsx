@@ -1,18 +1,13 @@
 "use client";
-import { Button } from "@/components/ui/button";
 
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
 import ThemeChange from "./theme-change";
 import SelectLayout from "./select-layout";
 import SelectTheme from "./select-theme";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Settings } from "@/components/svg";
+import { Button } from "../../ui/button";
+import { Settings } from "../../../svg";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "../../ui/sheet";
+import { ScrollArea } from "../../ui/scroll-area";
+
 
 
 const ThemeCustomize = ({

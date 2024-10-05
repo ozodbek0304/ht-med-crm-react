@@ -1,7 +1,7 @@
 // src/services/api.ts
-import { API_ENDPOINTS } from '@/api/api-endpoints';
-import baseQuery from '@/api/http';
-import { CustomerDetailsSeller, Item, ResultDetails } from '@/interfaces/customer';
+import baseQuery from '../../api/http';
+import { API_ENDPOINTS } from '../../api/api-endpoints';
+import { CustomerDetailsSeller, Item, ResultDetails } from '../../interfaces/customer';
 import { createApi } from '@reduxjs/toolkit/query/react';
 
 

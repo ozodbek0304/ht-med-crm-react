@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../../components/ui/button";
 import {
   Dialog,
   DialogClose,
@@ -8,9 +8,9 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { useCreateItemMedicalMutation } from "@/features/settings/sectors-medical-lists";
+} from "../../../../components/ui/dialog";
+import { Input } from "../../../../components/ui/input";
+import { useCreateItemMedicalMutation } from "../../../../features/settings/sectors-medical-lists";
 import { useState } from "react";
 import toast from "react-hot-toast";
 

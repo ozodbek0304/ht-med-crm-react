@@ -1,4 +1,4 @@
-import React, { useTransition } from "react";
+import { useTransition } from "react";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -8,11 +8,11 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "@/components/ui/alert-dialog";
+} from "../../../components/ui/alert-dialog";
 import { toast } from "react-hot-toast";
 import { Loader2 } from "lucide-react";
 
-const DeleteSettingDialog = ({ open, onClose, title, description, deleteBtnTitle, acceptBtnTitle, onConfirm, defaultToast = true, toastMessage,color,
+const DeleteSettingDialog = ({ open, onClose, title, description, deleteBtnTitle, acceptBtnTitle, onConfirm, defaultToast = true, toastMessage, color,
 }: {
   open: boolean;
   onClose: () => void;
@@ -23,7 +23,7 @@ const DeleteSettingDialog = ({ open, onClose, title, description, deleteBtnTitle
   description?: string;
   deleteBtnTitle?: string;
   acceptBtnTitle?: string;
-  color?:string;
+  color?: string;
 }) => {
   const [isPending, startTransition] = useTransition();
 
@@ -47,10 +47,10 @@ const DeleteSettingDialog = ({ open, onClose, title, description, deleteBtnTitle
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-        <AlertDialogAction color={color} onClick={onClose}>
+          <AlertDialogAction color={color} onClick={onClose}>
             {acceptBtnTitle}
           </AlertDialogAction>
-          <AlertDialogCancel  className={isPending ? "pointer-events-none" : ""}
+          <AlertDialogCancel className={isPending ? "pointer-events-none" : ""}
             onClick={() => startTransition(handleConfirm)}>
             {isPending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
             {isPending ? "Iltimos kuting..." : deleteBtnTitle}

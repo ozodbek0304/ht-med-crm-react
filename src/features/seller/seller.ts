@@ -1,7 +1,7 @@
 // src/services/api.ts
-import { API_ENDPOINTS } from "@/api/api-endpoints";
-import baseQuery from "@/api/http";
-import { CreateItem, ItemType, SellerDetailsItem,  UpdateItem } from "@/interfaces/seller-page";
+import baseQuery from '../../api/http';
+import { API_ENDPOINTS } from '../../api/api-endpoints';
+import { CreateItem, ItemType, SellerDetailsItem,  UpdateItem } from "../../interfaces/seller-page";
 import { createApi } from "@reduxjs/toolkit/query/react";
 
 

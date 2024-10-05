@@ -3,23 +3,23 @@ import React from "react";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Button } from "../../components/ui/button";
+import { Input } from "../../components/ui/input";
+import { Label } from "../../components/ui/label";
 import { Loader2 } from "lucide-react";
 import toast from "react-hot-toast";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import logo from "@/assets/Layer_1 (1).png";
-import { useMediaQuery } from "@/hooks/use-media-query";
-import { useAuth } from "@/store";
-import { menusConfigAdmin, menusConfigSeller } from "@/config/menus";
+import logo from "../../assets/Layer_1 (1).png";
+import { useMediaQuery } from "../../hooks/use-media-query";
+import { useAuth } from "../../store/index";
+import { menusConfigAdmin, menusConfigSeller } from "../../config/menus";
 import Image from "next/image";
-import { API_ENDPOINTS } from "@/api/api-endpoints";
-import { PhoneNumber } from "@/components/formatters/phone-number";
+import { API_ENDPOINTS } from "../../api/api-endpoints";
+import { PhoneNumber } from "../../components/formatters/phone-number";
 import axios from "axios";
-import { baseURL } from "@/api/http";
+import { baseURL } from "../../api/http";
 
 const schema = z.object({
   phone: z.string().min(9, { message: "Telefon raqam kamida 9 ta raqam bo'lishi kerak" }).regex(/^\+998\d{9}$/, { message: "Telefon raqam noto'g'ri formatda" }),

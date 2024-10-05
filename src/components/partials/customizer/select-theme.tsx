@@ -2,11 +2,12 @@
 
 import * as React from "react";
 import { useTheme } from "next-themes";
-import { cn } from "@/lib/utils";
-import { Label } from "@/components/ui/label";
 import { Icon } from "@iconify/react";
-import { themes } from "@/config/thems";
-import { useThemeStore } from "@/store";
+import { useThemeStore } from "../../../store";
+import { themes } from "../../../config/thems";
+import { cn } from "../../../lib/utils";
+import { Label } from "../../ui/label";
+
 
 
 const allThemes = [

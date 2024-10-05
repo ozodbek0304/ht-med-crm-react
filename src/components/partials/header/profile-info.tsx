@@ -6,14 +6,14 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "../../ui/dropdown-menu";
 import { Icon } from "@iconify/react";
-import { useAuth, useProfileDate } from "@/store";
-import { initialUser } from "@/config/site";
-import { formatPhoneNumber } from "@/components/formatters/phone-formatter";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { useLazyGetItemsProfileQuery } from "@/features/profile/profile";
 import { useEffect } from "react";
+import { useAuth, useProfileDate } from "../../../store";
+import { useLazyGetItemsProfileQuery } from "../../../features/profile/profile";
+import { initialUser } from "../../../config/site";
+import { Avatar, AvatarFallback, AvatarImage } from "../../ui/avatar";
+import { formatPhoneNumber } from "../../formatters/phone-formatter";
 
 
 
@@ -23,7 +23,8 @@ const ProfileInfo = () => {
   const { profileData, setProfileData } = useProfileDate();
   const { user } = useAuth()
 
-  const [getItemsProfile, { data, isSuccess }] = useLazyGetItemsProfileQuery()
+  const [getItemsProfile, { data, isSuccess }] = useLazyGetItemsProfileQuery();
+
   function LogOut() {
     setUser(initialUser);
     setRoleLink([]);

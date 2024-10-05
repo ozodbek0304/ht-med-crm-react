@@ -1,13 +1,13 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "../../../components/ui/button";
+import { Card, CardContent } from "../../../components/ui/card";
 import { useEffect, useState } from "react";
 import ClockTimer from "./comments/clock-timer";
-import { useUpdateItemMutation } from "@/features/customer/customer";
-import DeleteConfirmationDialog from "@/components/modals/delete-confirmation-dialog";
-import { Input } from "@/components/ui/input";
+import { useUpdateItemMutation } from "../../../features/customer/customer";
+import DeleteConfirmationDialog from "../../../components/modals/delete-confirmation-dialog";
+import { Input } from "../../../components/ui/input";
 import toast from "react-hot-toast";
 import { useParams } from "next/navigation";
-import { ResultDetails } from "@/interfaces/customer";
+import { ResultDetails } from "../../../interfaces/customer";
 
 
 

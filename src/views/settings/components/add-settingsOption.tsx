@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../components/ui/button";
 import {
   Dialog,
   DialogClose,
@@ -8,14 +8,14 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { useCreateItemPaymentMethodMutation } from "@/features/settings/payment-methods-lists";
-import { useCreateItemPaymentTypeMutation } from "@/features/settings/payment-type-lists";
-import { useCreateItemProductsMutation } from "@/features/settings/products-lists";
-import { useCreateItemMutation } from "@/features/settings/sectors-lists";
-import { useCreateItemMedicalMutation } from "@/features/settings/sectors-medical-lists";
-import { useCreateItemSourceMutation } from "@/features/settings/sourse-lists";
+} from "../../../components/ui/dialog";
+import { Input } from "../../../components/ui/input";
+import { useCreateItemPaymentMethodMutation } from "../../../features/settings/payment-methods-lists";
+import { useCreateItemPaymentTypeMutation } from "../../../features/settings/payment-type-lists";
+import { useCreateItemProductsMutation } from "../../../features/settings/products-lists";
+import { useCreateItemMutation } from "../../../features/settings/sectors-lists";
+import { useCreateItemMedicalMutation } from "../../../features/settings/sectors-medical-lists";
+import { useCreateItemSourceMutation } from "../../../features/settings/sourse-lists";
 import { Loader2 } from "lucide-react";
 import { useState, useTransition } from "react";
 import toast from "react-hot-toast";

@@ -1,5 +1,6 @@
-import { ResultDetails } from "@/interfaces/customer";
+
 import React, { useState, useEffect } from "react";
+import { ResultDetails } from "../../../../interfaces/customer";
 
 const ClockTimer = ({ data }: { data: ResultDetails | undefined }) => {
 

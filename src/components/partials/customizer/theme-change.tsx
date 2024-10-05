@@ -1,15 +1,11 @@
-import { useThemeStore } from "@/store";
-import { cn } from "@/lib/utils";
+
 import React from "react";
-import { themes } from "@/config/thems";
 import { useTheme } from "next-themes";
 import { Check } from "lucide-react";
-import {
-  TooltipProvider,
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+import { useThemeStore } from "../../../store";
+import { themes } from "../../../config/thems";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../../ui/tooltip";
+import { cn } from "../../../lib/utils";
 
 const ThemeChange = () => {
   const { theme, setTheme } = useThemeStore();

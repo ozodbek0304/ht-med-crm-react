@@ -5,9 +5,9 @@ import { WorldMapTopoJSON } from '@unovis/ts/maps'
 import { VisSingleContainer, VisTopoJSONMap, VisTooltip, VisAxis, VisXYContainer, VisStackedBar } from '@unovis/react'
 
 
-import { useThemeStore } from "@/store";
+import { useThemeStore } from "../../store";
 import { useTheme } from "next-themes";
-import { themes } from "@/config/thems";
+import { themes } from "../../config/thems";
 
 const yearRange = [1950, 2019]
 const ageRange = [50, 85]

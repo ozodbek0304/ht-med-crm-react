@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "../ui/button";
 
 import { useTheme } from "next-themes";
 import { Link } from "react-router-dom";

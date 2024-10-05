@@ -1,22 +1,22 @@
-import { dashboardCardApi } from "@/features/admin-dashboard/admin-dashboard";
-import { calendarListApi } from "@/features/calendar/calendar-isAvailable";
-import { sellerCalendarListApi } from "@/features/calendar/seller-calendar";
-import { commentsListApi } from "@/features/comments/comment";
-import { customerCardApi } from "@/features/customer/customer";
-import { notificationListApi } from "@/features/notifications/notifications";
-import { profileApi } from "@/features/profile/profile";
-import { sellerDashboardApi } from "@/features/seller-dashboard/seller-dashboard";
-import { sellerListsApi } from "@/features/seller/seller";
-import { sellerRequestListsApi } from "@/features/selller-request/seller-request";
-import { locationListsApi } from "@/features/settings/location-lists";
-import { paymentMethodsListsApi } from "@/features/settings/payment-methods-lists";
-import { paymentTypeListsApi } from "@/features/settings/payment-type-lists";
-import { productsListsApi } from "@/features/settings/products-lists";
-import { SectorsListsApi } from "@/features/settings/sectors-lists";
-import { SectorMeicalListsApi } from "@/features/settings/sectors-medical-lists";
-import { SourseListsApi } from "@/features/settings/sourse-lists";
+import { calendarListApi } from "../features/calendar/calendar-isAvailable";
+import { sellerCalendarListApi } from "../features/calendar/seller-calendar";
+import { commentsListApi } from "../features/comments/comment";
+import { customerCardApi } from "../features/customer/customer";
+import { notificationListApi } from "../features/notifications/notifications";
+import { profileApi } from "../features/profile/profile";
+import { sellerDashboardApi } from "../features/seller-dashboard/seller-dashboard";
+import { sellerListsApi } from "../features/seller/seller";
+import { sellerRequestListsApi } from "../features/selller-request/seller-request";
+import { locationListsApi } from "../features/settings/location-lists";
+import { paymentMethodsListsApi } from "../features/settings/payment-methods-lists";
+import { paymentTypeListsApi } from "../features/settings/payment-type-lists";
+import { productsListsApi } from "../features/settings/products-lists";
+import { SectorsListsApi } from "../features/settings/sectors-lists";
+import { SectorMeicalListsApi } from "../features/settings/sectors-medical-lists";
+import { SourseListsApi } from "../features/settings/sourse-lists";
 import { configureStore } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
+import { dashboardCardApi } from "../features/admin-dashboard/admin-dashboard";
 
 export const store = configureStore({
   reducer: {

@@ -1,7 +1,7 @@
 "use client";
 import { Menu } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useSidebar } from "@/store";
+import { Button } from "../../ui/button";
+import { useSidebar } from "../../../store";
 const MobileMenuHandler = () => {
   const { mobileMenu, setMobileMenu } = useSidebar();
   return (

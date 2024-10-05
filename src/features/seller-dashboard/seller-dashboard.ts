@@ -1,9 +1,9 @@
 // src/services/api.ts
-import { API_ENDPOINTS } from "@/api/api-endpoints";
-import baseQuery from "@/api/http";
+import baseQuery from '../../api/http';
+import { API_ENDPOINTS } from '../../api/api-endpoints';
 import { createApi } from "@reduxjs/toolkit/query/react";
-import { SellerDashboardCalendar, SellerDashboardCounts } from "@/interfaces/seller-dashboard";
-import { Item } from "@/interfaces/customer";
+import { SellerDashboardCalendar, SellerDashboardCounts } from "../../interfaces/seller-dashboard";
+import { Item } from "../../interfaces/customer";
 
 
 export const sellerDashboardApi = createApi({

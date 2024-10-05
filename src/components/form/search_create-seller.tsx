@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { Icon } from "@iconify/react";
-import { InputGroup, InputGroupText } from "@/components/ui/input-group";
-import { Input } from '@/components/ui/input';
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import useDebounce from '@/hooks/use-Debunce';
-import { useGetItemsUserSearchQuery } from '@/features/settings/location-lists';
+import { InputGroup, InputGroupText } from "../ui/input-group";
+import { Input } from '../ui/input';
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { formatPhoneNumber } from '../formatters/phone-formatter';
 import { formatCustomDate } from '../formatters/date-formatter';
 import { Alert, AlertDescription } from '../ui/alert';
+import useDebounce from '../../hooks/use-Debunce';
+import { useGetItemsUserSearchQuery } from '../../features/settings/location-lists';
 
 type Props = {
     onSelect: (item: any) => void;

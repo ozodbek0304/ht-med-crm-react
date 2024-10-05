@@ -1,7 +1,7 @@
 import { create } from 'zustand'
-import { siteConfig } from "@/config/site";
 import { persist, createJSONStorage } from "zustand/middleware";
-import { AuthState, ProfileState, SidebarState, ThemeStoreState } from '@/interfaces/zustand-store';
+import { AuthState, ProfileState, SidebarState, ThemeStoreState } from '../interfaces/zustand-store';
+import { siteConfig } from '../config/site';
 
 
 export const useThemeStore = create<ThemeStoreState>()(

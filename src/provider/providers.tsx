@@ -1,12 +1,11 @@
 "use client";
 import { Inter } from "next/font/google";
-import { useThemeStore } from "@/store";
 import { ThemeProvider } from "next-themes";
-import { cn } from "@/lib/utils";
-import { Toaster as ReactToaster } from "@/components/ui/toaster";
 import { Toaster } from "react-hot-toast";
-import { SonnToaster } from "@/components/ui/sonner";
 import { usePathname } from "next/navigation";
+import { useThemeStore } from "../store";
+import { cn } from "../lib/utils";
+import { SonnToaster } from "../components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 const Providers = ({ children }: { children: React.ReactNode }) => {
@@ -24,7 +23,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
         >
           <div className={cn("h-full  ")}>
             {children}
-            <ReactToaster />
+            {/* <ReactToaster /> */}
           </div>
           <Toaster />
           <SonnToaster />
@@ -47,7 +46,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
       >
         <div className={cn("h-full  ")}>
           {children}
-          <ReactToaster />
+          {/* <ReactToaster /> */}
         </div>
         <Toaster />
         <SonnToaster />

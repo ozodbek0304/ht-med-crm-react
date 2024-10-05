@@ -1,7 +1,7 @@
-import { formatCustomDate } from "@/components/formatters/date-formatter";
-import { Location } from "@/components/svg";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { CommentType } from "@/interfaces/commit-page";
+import { formatCustomDate } from "../../../components/formatters/date-formatter";
+import { Location } from "../../../svg";
+import { Avatar, AvatarFallback, AvatarImage } from "../../../components/ui/avatar";
+import { CommentType } from "../../../interfaces/commit-page";
 
 interface CustomerCardProps {
   item: CommentType;

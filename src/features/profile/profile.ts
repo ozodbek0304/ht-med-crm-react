@@ -1,7 +1,8 @@
 import { createApi } from "@reduxjs/toolkit/query/react";
-import baseQuery from "@/api/http";
-import { API_ENDPOINTS } from "@/api/api-endpoints";
-import { SellerResults } from "@/interfaces/seller-page";
+import { SellerResults } from "../../interfaces/seller-page";
+import { API_ENDPOINTS } from "../../api/api-endpoints";
+import baseQuery from "../../api/http";
+
 
 
 

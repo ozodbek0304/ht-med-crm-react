@@ -1,6 +1,7 @@
 import React from "react";
-import { BlankVector } from "../svg";
-import { cn } from "@/lib/utils";
+import { BlankVector } from "../../svg";
+import { cn } from "../../lib/utils";
+
 
 interface BlankProps {
   children: React.ReactNode

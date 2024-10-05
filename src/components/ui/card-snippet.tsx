@@ -1,23 +1,15 @@
 "use client";
+import { useTheme } from "next-themes";
 import React, { useState } from "react";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
-import {
-  Collapsible,
-  CollapsibleContent,
-} from "@/components/ui/collapsible";
-import { Switch } from "@/components/ui/switch";
+import { useThemeStore } from "../../store";
+import { themes } from "../../config/thems";
+import { hslToHex } from "../../lib/utils";
+import { Card, CardContent, CardHeader, CardTitle } from "./card";
+import { Switch } from "./switch";
+import { Collapsible, CollapsibleContent } from "./collapsible";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import { themes } from "@/config/thems";
-import { useTheme } from "next-themes";
-import { hslToHex } from "@/lib/utils";
-import { useThemeStore } from "@/store";
+
 
 
 interface CardSnippetProps {

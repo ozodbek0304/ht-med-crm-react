@@ -1,9 +1,11 @@
 "use client"
-import DashBoardLayoutProvider from "@/provider/dashboard.layout.provider";
-import { useAuth } from "@/store";
+import DashBoardLayoutProvider from "../../provider/dashboard.layout.provider";
+
 import ErrorPage403 from "../error-page/403/page";
-import LayoutLoader from "@/components/skeleton/layout-loader";
-import MapComponent from "@/views/map/map-page";
+import LayoutLoader from "../../components/skeleton/layout-loader";
+import { useAuth } from "../../store";
+import MapComponent from "../../views/map/map-page";
+
 const MapPage = () => {
   const { user } = useAuth((state) => state);
 

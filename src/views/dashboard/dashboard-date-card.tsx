@@ -1,16 +1,17 @@
-import { Calendar } from '@/components/ui/calendar'
-import { Card, CardContent } from '@/components/ui/card'
-import { useGetSellerCalendarDateQuery } from '@/features/seller-dashboard/seller-dashboard'
-import { useCalendarStore } from '@/store/calendarStore'
+import { Calendar } from '../../components/ui/calendar'
+import { Card, CardContent } from '../../components/ui/card'
+import { useGetSellerCalendarDateQuery } from '../../features/seller-dashboard/seller-dashboard'
+import { useCalendarStore } from '../../store/calendarStore'
 import React, { useState } from 'react'
 import { DateRange } from "react-day-picker";
 import dayjs from "dayjs";
-import { Alert, AlertDescription } from '@/components/ui/alert'
-import { SellerDashboardItem } from '@/types/seller-dashboard'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { formatCustomDate } from '@/components/formatters/date-formatter'
-import { useAuth } from '@/store'
-import { Skeleton } from '@/components/ui/skeleton'
+import { Alert, AlertDescription } from '../../components/ui/alert'
+import { Avatar, AvatarFallback, AvatarImage } from '../../components/ui/avatar'
+import { formatCustomDate } from '../../components/formatters/date-formatter'
+import { useAuth } from '../../store'
+import { Skeleton } from '../../components/ui/skeleton'
+import { SellerDashboardItem } from '../../interfaces/seller-dashboard'
+
 
 
 type Props = {

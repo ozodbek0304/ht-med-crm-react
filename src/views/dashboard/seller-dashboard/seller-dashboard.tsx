@@ -1,21 +1,21 @@
 "use client"
 
-import { User, Application, DashBoard } from "@/components/svg";
+import { User, Application, DashBoard } from "../../../svg";
 import  { useEffect } from "react";
 import DashboardCard from "../dashboard-card";
 import CustomerPage from "../../customer/customers/customer-page";
-import { useGetSellerDashboradQuery } from "@/features/seller-dashboard/seller-dashboard";
-import { Skeleton } from "@/components/ui/skeleton";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import { addPeriodToThousands } from "@/components/formatters/price-formatter";
-import UserDeviceReport from "@/components/chart/basic-donut";
-import { formatPhoneNumber } from "@/components/formatters/phone-formatter";
-import { useGetItemsProfileQuery } from "@/features/profile/profile";
+import { useGetSellerDashboradQuery } from "../../../features/seller-dashboard/seller-dashboard";
+import { Skeleton } from "../../../components/ui/skeleton";
+import { Alert, AlertDescription } from "../../../components/ui/alert";
+import { addPeriodToThousands } from "../../../components/formatters/price-formatter";
+import UserDeviceReport from "../../../components/chart/basic-donut";
+import { formatPhoneNumber } from "../../../components/formatters/phone-formatter";
+import { useGetItemsProfileQuery } from "../../../features/profile/profile";
 
 import DashboardCommitDate from "../dashboard-date-card";
-import { useProfileDate } from "@/store";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Card, CardContent } from "@/components/ui/card";
+import { useProfileDate } from "../../../store";
+import { Avatar, AvatarFallback, AvatarImage } from "../../../components/ui/avatar";
+import { Card, CardContent } from "../../../components/ui/card";
 
 
 

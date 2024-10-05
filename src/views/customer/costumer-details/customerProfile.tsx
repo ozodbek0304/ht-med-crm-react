@@ -1,11 +1,11 @@
-import { useAuth } from "@/store";
+import { useAuth } from "../../../store";
 import CommentsSection from "./comments/comments";
 import ContactInformations from "./contact-informations";
 import CustomerTime from "./customerTime";
 import ProfileDetails from "./profile-details";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "../../../components/ui/avatar";
 import Link from "next/link";
-import { useLazyGetItemDetailsSellersQuery, useLazyGetItemsDetailsQuery } from "@/features/customer/customer";
+import { useLazyGetItemDetailsSellersQuery, useLazyGetItemsDetailsQuery } from "../../../features/customer/customer";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
 

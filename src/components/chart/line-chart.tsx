@@ -1,10 +1,10 @@
 "use client";
 
-import { useThemeStore } from "@/store";
+import { useThemeStore } from "../../store/index";
 import { useTheme } from "next-themes";
-import { themes } from "@/config/thems";
-import { getGridConfig, getLabel } from "@/lib/appex-chart-options";
 import Chart from "react-apexcharts";
+import { themes } from "../../config/thems";
+import { getGridConfig, getLabel } from "../../lib/appex-chart-options";
 
 const LineColumn = ({ height = 544.6, text }: { height?: number, text: string }) => {
   const { theme: config, } = useThemeStore();

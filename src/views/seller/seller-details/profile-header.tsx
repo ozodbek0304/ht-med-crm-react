@@ -1,13 +1,13 @@
 "use client";
-import coverImage from "@/assets/user-cover.png";
+import coverImage from "../../../assets/user-cover.png";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../components/ui/button";
 import { Icon } from "@iconify/react";
 import { Fragment, useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "../../../components/ui/card";
 import UpdateSellerModal from "../seller.tsx/update-seller";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { SellerDetailsItem } from "@/interfaces/seller-page";
+import { Avatar, AvatarFallback, AvatarImage } from "../../../components/ui/avatar";
+import { SellerDetailsItem } from "../../../interfaces/seller-page";
 
 interface statetype {
   setValueText: any;

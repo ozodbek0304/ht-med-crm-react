@@ -1,15 +1,15 @@
 "use client";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card } from "../../../components/ui/card";
+import { Button } from "../../../components/ui/button";
 import { Icon } from "@iconify/react";
-import { User, Phone, Location } from "@/components/svg";
+import { User, Phone, Location } from "../../../svg";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
+} from "../../../components/ui/dialog";
 import Image from "next/image";
 import CustomerUpdates from "../updates-customers/page";
 import {
@@ -17,9 +17,9 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { ResultDetails } from "@/interfaces/customer";
+} from "../../../components/ui/tooltip";
+import { Avatar, AvatarFallback, AvatarImage } from "../../../components/ui/avatar";
+import { ResultDetails } from "../../../interfaces/customer";
 
 
 const ContactInformations = ({ data }: { data: ResultDetails | undefined }) => {

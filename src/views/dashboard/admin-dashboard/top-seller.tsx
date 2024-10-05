@@ -1,7 +1,7 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { formatPhoneNumber } from "@/components/formatters/phone-formatter";
-import TopBrowserChart from "@/components/chart/basic-donut";
-import { SellerResults } from "@/interfaces/seller-page";
+import { Avatar, AvatarFallback, AvatarImage } from "../../../components/ui/avatar";
+import { formatPhoneNumber } from "../../../components/formatters/phone-formatter";
+import TopBrowserChart from "../../../components/chart/basic-donut";
+import { SellerResults } from "../../../interfaces/seller-page";
 
 
 

@@ -1,16 +1,16 @@
 import { useState } from "react";
-import { Card } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
+import { Card } from "../../components/ui/card";
+import { Input } from "../../components/ui/input";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+} from "../../components/ui/select";
+import { Dialog, DialogContent, DialogTrigger } from "../../components/ui/dialog";
 import { Icon } from "@iconify/react";
-import { Label } from "@/components/ui/label";
+import { Label } from "../../components/ui/label";
 
 const MapHeading = () => {
   const [searchTerm, setSearchTerm] = useState("");

@@ -1,6 +1,6 @@
 import CalendarView from "./calender-view";
-import { useGetCalendarListQuery } from "@/features/calendar/calendar-isAvailable";
-import { useCalendarIsAvailableStore } from "@/store/calendarIsAvailableStore";
+import { useGetCalendarListQuery } from "../../features/calendar/calendar-isAvailable";
+import { useCalendarIsAvailableStore } from "../../store/calendarIsAvailableStore";
 
 const CalenderPage = () => {
   const { queryParam } = useCalendarIsAvailableStore();

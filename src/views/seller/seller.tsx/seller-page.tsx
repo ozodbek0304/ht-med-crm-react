@@ -1,13 +1,13 @@
-import { useGetItemsQuery } from "@/features/seller/seller";
+import { useGetItemsQuery } from "../../../features/seller/seller";
 import SellerCard from "./seller-card";
 import SellerHeading from "./seller-heading";
-import SkeletonPage from "@/components/skeleton/skeleton-page";
+import SkeletonPage from "../../../components/skeleton/skeleton-page";
 import { useState } from "react";
 import Link from "next/link";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import PaginationPage from "@/components/pagination/page";
-import { useSellerStore } from "@/store/sellersStore";
-import { SellerResults } from "@/interfaces/seller-page";
+import { Alert, AlertDescription } from "../../../components/ui/alert";
+import PaginationPage from "../../../components/pagination/page";
+import { useSellerStore } from "../../../store/sellersStore";
+import { SellerResults } from "../../../interfaces/seller-page";
 
 
 
