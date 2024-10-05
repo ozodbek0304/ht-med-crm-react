@@ -14,7 +14,6 @@ export const dashboardCardApi = createApi({
             query: () => API_ENDPOINTS.ADMIN_DASHBOARD,
         }),
 
-
     }),
 });
 

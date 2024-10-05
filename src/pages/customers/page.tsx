@@ -1,9 +1,9 @@
 "use client"
-import CustomerPage from "@/components/pages/customer/customers/customer-page";
 import DashBoardLayoutProvider from "@/provider/dashboard.layout.provider";
 import { useAuth } from "@/store";
 import ErrorPage403 from "../error-page/403/page";
 import LayoutLoader from "@/components/skeleton/layout-loader";
+import CustomerPage from "@/views/customer/customers/customer-page";
 
 const Customers = () => {
   const { user } = useAuth((state) => state);

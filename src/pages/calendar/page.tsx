@@ -1,9 +1,9 @@
 "use client"
-import CalenderPage from "@/components/pages/calendar/page";
 import DashBoardLayoutProvider from "@/provider/dashboard.layout.provider";
 import { useAuth } from "@/store";
 import ErrorPage403 from "../error-page/403/page";
 import LayoutLoader from "@/components/skeleton/layout-loader";
+import CalenderPage from "@/views/calendar/page";
 
 const CalendarPage = () => {
   const { user } = useAuth((state) => state);

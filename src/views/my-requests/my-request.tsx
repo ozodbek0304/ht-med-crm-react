@@ -17,7 +17,7 @@ interface roleData {
   role: string;
 }
 
-const MyRequests = ({ role }: roleData) => {
+const MyRequestsPages = ({ role }: roleData) => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [admin_response, setAdminRespons] = useState("");
@@ -299,4 +299,4 @@ const MyRequests = ({ role }: roleData) => {
   );
 };
 
-export default MyRequests;
+export default MyRequestsPages;

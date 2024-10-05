@@ -4,11 +4,11 @@ import SettingsTable from './components/sektor-table';
 import CustomerTable from './components/customer-table';
 import EquipmentsTable from './components/equipments-table';
 import Sector2Table from './components/sector2-table';
-import { Button } from "@/components/ui/button";
 import { Plus } from 'lucide-react';
 import AddNewOptionModalSettings from './components/add-settingsOption';
 import PaymentMetodTable from './components/payment-metod.table';
 import PaymentTypeTable from './components/payment-type.table';
+import { Button } from '@/components/ui/button';
 
 const Settings: React.FC = () => {
     const [activeTab, setActiveTab] = useState('sector');

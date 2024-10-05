@@ -1,5 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import "./styles/index.css"
+import "./assets/scss/globals.scss";
+import "./assets/scss/theme.scss";
 import { store } from './store/store';
 import { Provider } from 'react-redux';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
@@ -16,8 +18,9 @@ const browserRouter = createBrowserRouter(router);
 
 root.render(
   <Provider store={store}>
-    <RouterProvider router={browserRouter} />
-    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={browserRouter} />
+    </QueryClientProvider>
   </Provider>
 );
 

@@ -11,6 +11,8 @@ import ThemeCustomize from "@/components/partials/customizer/theme-customizer";
 import MobileSidebar from "@/components/partials/sidebar/mobile-sidebar";
 import { useMounted } from "@/hooks/use-mounted";
 import LayoutLoader from "@/components/skeleton/layout-loader";
+
+
 const DashBoardLayoutProvider = ({ children, }: { children: React.ReactNode }) => {
   const { collapsed } = useSidebar();
   const { layout } = useThemeStore();

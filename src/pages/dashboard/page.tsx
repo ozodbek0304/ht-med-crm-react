@@ -1,12 +1,11 @@
 "use client"; // Client-side komponentni belgilang
 
-import AdminDashboard from '@/components/pages/dashboard/admin-dashboard/admin-dashboard'
-import SellerDashboard from '@/components/pages/dashboard/seller-dashboard/seller-dashboard'
 import DashBoardLayoutProvider from '@/provider/dashboard.layout.provider'
 import { useAuth } from '@/store'
-import React from 'react'
 import ErrorPage403 from '../error-page/403/page';
 import LayoutLoader from '@/components/skeleton/layout-loader';
+import AdminDashboard from '@/views/dashboard/admin-dashboard/admin-dashboard';
+import SellerDashboard from '@/views/dashboard/seller-dashboard/seller-dashboard';
 
 const Dashboard = () => {
   const { user } = useAuth((state) => state);

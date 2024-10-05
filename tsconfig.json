@@ -23,12 +23,9 @@
       "./node_modules/@types",
       "./src/@types"
     ],
-    // Yangi qism
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["*"]
     }
   },
   "include": [
