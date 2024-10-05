@@ -1,0 +1,16 @@
+export const urls = {
+    INDEX: '/',
+    LOGIN: "/login",
+    CALENDAR: '/calendar',
+    CUSTOMER_DETAILS: '/customer-details/:id',
+    CUSTOMERS: '/customers',
+    DASHBOARD: "/dashboard",
+    MAP: '/map',
+    MY_REQUESTS: '/my-requests',
+    NOTIFICATIONS: "/notifications",
+    REQUSET: '/requests',
+    SELLER: '/seller',
+    SELLER_DETAILS: '/seller-details/:id',
+    SETTINGS: '/settings',
+    ADD_CUSTOMER: '/add-customer',
+};  
